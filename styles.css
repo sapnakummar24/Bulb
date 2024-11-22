@@ -1,0 +1,101 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #f0f8ff, #d6e6f2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background: #3887be;
+    color: white;
+    width: 100%;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#bulb-container {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bulb {
+    width: 250px;
+    height: 200px;
+    background: transparent;
+    border: 3px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background 0.5s, box-shadow 0.5s;
+}
+
+#bulb.on {
+    background: radial-gradient(circle, #fff973, #ffcc00);
+    box-shadow: 0 0 40px 15px #ffcc00, inset 0 0 10px 5px #fff;
+}
+
+#filament {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 10px;
+    background: #000;
+    border-radius: 10px;
+}
+
+button.btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    background: #2b3ecfa1;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button.btn:hover {
+    background: #3887be;
+    transform: scale(1.05);
+}
+
+footer {
+    background: #3887be;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
